@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block 'title'%}
+<title>Online Shopping: SignIn!</title>
+{% endblock %}
+
+{%block 'body'%}
+<!-- Body of Form starts -->
+<div style="text-align: center; padding: 50px; background-color: #f4f4f4; height: 100vh;">
+        <h1 style="color: #227093; font-family: Arial, sans-serif; font-size: 36px; margin-bottom: 20px;">
+            You have been logged out
+        </h1>
+    
+        <div class="linkdisp" style="margin-top: 30px;">
+            <a href="{%url 'login_page'%}" 
+               style="color: white; background-color: #227093; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-size: 18px; font-family: Arial, sans-serif; display: inline-block;">
+                Login Again
+            </a>
+        </div>
+    </div>
+    
+<!--Body of Form ends--->
+
+{%endblock%}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block 'title'%}
+<title>Online Shopping: Home!</title>
+{% endblock %}
+
+{%block 'body'%}
+<!-- Body of Form starts -->
+<div class="container">
+        
+        <div class="linkdisp">
+                <h3><a href="{% url 'register_page' %}">Want to signup?. Register Here.</a></h3>
+        </div>
+
+        <br/><br/>
+
+        <div class="linkdisp">
+                <h3><a href="{% url 'login_page' %}">Want to Login?. Click Here.</a></h3>
+        </div>
+</div>
+<!--Body of Form ends--->
+
+{%endblock%}
